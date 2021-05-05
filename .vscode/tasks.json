@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "Build Open File",
+      "command": "C:\\Program Files\\ming-w64\\bin\\g++.exe",
+      "args": [
+        "-g",
+        "${file}",
+        "-o",
+        "${workspaceFolder}\\bin\\${fileDirnameBasename}.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "compiler: \"C:\\Program Files\\ming-w64\\bin\\g++.exe\"",
+      "dependsOn": ["Clear Bin Folder"]
+    },
+    {
+      "type": "shell",
+      "label": "Clear Bin Folder",
+      "command": "del *.*",
+      "options": {
+        "cwd": "${workspaceFolder}\\bin"
+      }
+    }
+  ]
+}
