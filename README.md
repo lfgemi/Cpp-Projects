@@ -1,2 +1,4 @@
-# Cpp-Projects
- Tools and Projects in C++
+## Simple projects in C++
+
+ - Favourite Number: Guess your favourite number
+ - HelloWorld: Simple HelloWorld with C#
